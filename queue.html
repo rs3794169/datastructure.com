@@ -1,0 +1,112 @@
+<html>
+<head>
+<style>
+    h1{
+        color: darkslateblue;
+        font-family: sans-serif;
+    }
+    h2{
+        color: deeppink;
+       
+    }
+body {
+background-color:yellow;
+color:black;
+font-family:Times New Roman ;
+font-size:20px;
+list-style:disc;
+}
+    
+ button {
+background-color:darksalmon; 
+border: .8px solid red ;
+border-radius: 10px; 
+color: blue; 
+padding: 5px;
+box-shadow: 0 0 10px 0 crimson, 0 0 10px 0 crimson, 0 0 10px 0 crimson inset;
+height: 10vh;
+width : 30vh;
+float:left;
+border-radius: 30px;
+font-family: "Quicksand", sans-serif;
+ }
+.btn
+{
+background-color:darksalmon; 
+border:.8px solid red ;
+border-radius: 10px; 
+color: blue; 
+padding: 5px;
+box-shadow: 0 0 10px 0 crimson, 0 0 10px 0 crimson, 0 0 10px 0 crimson inset;
+height: 10vh;
+width+ : 30vh;
+float:right; 
+border-radius: 30px;
+font-family: "Quicksand", sans-serif;
+}
+  footer
+{
+    background-color:green;
+    color:white;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+}   
+
+    
+</style>
+</head>
+<boby>
+<h1>Queue in Data Structures</h1>
+<p>Queue in data structures is a linear collection of different data types which follow a specific order while performing various operations. It can only be modified by the addition of data entities at one end or the removal of data entities at another. By convention, the end where insertion is performed is called Rear, and the end at which deletion takes place is known as the Front.<br>
+<br>These constraints of queue make it a First-In-First-Out (FIFO) data structure, i.e., the data element inserted first will be accessed first, and the data element inserted last will be accessed last. This is equivalent to the requirement that once an additional data element is added, all previously added elements must be removed before the new element can be removed. That’s why more abstractly, a queue in a data structure is considered being a sequential collection.</p>
+ <h2>REAL LIFE EXAMPLE</h2> 
+<p>The movie ticket counter is an excellent example of a queue where the customer that came first will be served first. Also, the barricades of the movie ticket counter stop in-between disruption to attain different operations at different ends. <br><br>
+    <img src="movie.png" border="2" height="200" width="400">
+    <br><br>
+The queue in the data structure acts the same as the movie ticket counter. Both the ends of this abstract data structure remain open. Further, the insertion and deletion processes also operate analogously to the wait-up line for tickets.<br>
+<h2>REPRESENTATION OF QUEUE</h2>
+<p>The following diagram tries to explain queue representation as a data structure:<br><br>
+<img src="Queue-Representation.png" border="2" height="200" width="400"><br><br>
+A queue can be implemented using Arrays, Linked-lists, Pointers, and Structures. The implementation using one-dimensional arrays is the easiest method of all the mentioned methods. 
+    </p>
+<h2>Basic Operations for Queue in Data Structure</h2>
+<p>Unlike arrays and linked lists, elements in the queue cannot be operated from their respective locations. They can only be operated at two data pointers, front and rear. Also, these operations involve standard procedures like initializing or defining data structure, utilizing it, and then wholly erasing it from memory.<br>
+    <li>Insersion [Enqueue()] - Insertion of elements to the queue.</li><br>
+    
+    <li>Deletion[Dequeue()]-Removal of elements from the queue.</li><br></p>
+    <h2>Enqueue() Operation</h2>
+    <p>The following steps should be followed to insert (enqueue) data element into a queue -<br>
+    <li>Step 1: Check if the queue is full.</li><br>
+    <li>Step 2: If the queue is full, Overflow error.</li><br>
+    <li>Step 3: If the queue is not full, increment the rear pointer to point to the next available empty space. </li><br>
+    <li>Step 4: Add the data element to the queue location where the rear is pointing.</li><br>
+    <li>Step 5: Here, you have successfully added 7, 2, and -9.</li><br> 
+    <img src="enqueue.png" border="2" height="300" width="500">
+        
+    </p>
+    <h2>Dequeue() Operation</h2>
+    <p>Obtaining data from the queue comprises two subtasks: access the data where the front is pointing and remove the data after access. You should take the following steps to remove data from the queue - <br></p>
+    <li>Step 1: Check if the queue is empty.</li>
+    <li>Step 2: If the queue is empty, Underflow error.</li>
+    <li>Step 3: If the queue is not empty, access the data where the front pointer is pointing. </li>
+    <li>Step 4: Increment front pointer to point to the next available data element.</li>
+    <li>Step 5: Here, you have removed 7, 2, and -9 from the queue data structure.</li>
+    <img src="dequeue.png" border="2" height="300" width="500"><br><br>
+    <h2> APPLICATIONS OF QUEUE</h2>
+    <p><li>Printers: Queue data structure is used in printers to maintain the order of pages while printing.</li><br>
+    <li>Interrupt handling in computes: The interrupts are operated in the same order as they arrive, i.e., interrupt which comes first, will be dealt with first.</li><br>
+    <li>Process scheduling in Operating systems: Queues are used to implement round-robin scheduling algorithms in computer systems.</li><br>
+    <li>Switches and Routers: Both switch and router interfaces maintain ingress (inbound) and egress (outbound) queues to store packets.</li><br>
+    <li>Customer service systems: It develops call center phone systems using the concepts of queues.</li><br>
+    </p>
+    
+    
+    
+<button><a href="stack.html">➪PREVIOUS  </a></button>
+<button class="btn"><a href="tree.html"> NEXT➪ </a></button><br><br><br>
+<footer>
+ <p><center> @ book study point production</center></p>
+</footer>
+</boby>
+</html>

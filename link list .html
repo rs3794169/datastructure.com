@@ -1,0 +1,151 @@
+<html>
+<head>
+<style>
+    h1{
+        font-family: sans-serif;
+     color:darkmagenta;
+    }
+    h2{
+        color:blue;
+    }
+    h3{
+     color: deeppink;
+    }
+    
+body {
+background-color:yellow;
+color:black;
+font-family:Times New Roman ;
+font-size:20px;
+list-style:circle;
+}
+    
+ button {
+background-color:darksalmon; 
+border: .8px solid red ;
+border-radius: 10px; 
+color: blue; 
+padding: 5px;
+box-shadow: 0 0 10px 0 crimson, 0 0 10px 0 crimson, 0 0 10px 0 crimson inset;
+height: 10vh;
+width : 30vh;
+float:left;
+border-radius: 30px;
+font-family: "Quicksand", sans-serif;
+ }
+.btn
+{
+background-color:darksalmon; 
+border:.8px solid red ;
+border-radius: 10px; 
+color: blue; 
+padding: 5px;
+box-shadow: 0 0 10px 0 crimson, 0 0 10px 0 crimson, 0 0 10px 0 crimson inset;
+height: 10vh;
+width+ : 30vh;
+float:right; 
+border-radius: 30px;
+font-family: "Quicksand", sans-serif;
+}
+  footer
+{
+    background-color:green;
+    color:white;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+}   
+
+    
+</style>
+</head>
+
+<body >
+
+<h1>LINK LIST IN DATA STRUCTURE </h1>
+
+<p>A linked list is a linear data structure. In which we can sequentially store the data. Unlike an array linked list is a dynamic data structure the size of a linked list can grow or shrink depending on the situation.<br>
+
+However, in the case of Arrays, we need to predefine the size and we can’t add more items than the max size defined.</p>
+<br><br>
+    <h2> LINK LIST REPRESENTATION</h2>
+<img src = "Linked-List.png" height="200" width="600" border="2"><br><br>
+The element of a linked list is called a node. Every element or node contains two main entities first entity is the information or the data whereas the second entity is the pointer to the next node.
+
+The structure of the linked list is like a train. A linked list has the following components –
+<li><b>Data:</b> Data is the value stored in it, it could be anything an integer or a string or anything else really.</li><br>
+    <li><b>Pointer (Link)</b>Each linked list contains a pointer which points to address of the next node in the linked list train.</li><br><br>
+    Apart from this the following are also keywords used in linked lists –
+    <li><b>Node –</b> Any single unit of a linked list, its data and pointer(s), is called a node.</li><br>
+    
+    <li><b>Head: </b>First is the head who is defined the beginning of the list.</li><br>
+    <li><b>Tail: </b>second is tail which defined end of the list.</li><br>
+
+<br><br>
+<h2>Why we use Linked List in Data Structure?</h2><br>
+Generally for storage arrays are used. But, there are many many disadvantaged with arrays –
+<h3>Fixed Size</h3><br><li>The size of the array is fixed and needs to be pre-defined<br>
+1.Example – int a[10]; or int a[ ] = {1, 2, 3, 4, 5}<br>
+2.We can’t declare an array without declaring the size.<br></li>
+<h3>Memory wastage (Not Optimised)</h3>
+  <p>  <li>If you declare an array of size 10 and just assign values to first two elements</li>
+      <li>The memory is allocated to all of them even though, we may not end up using them.</li></p>
+    <h3>Need for Contiguous Memory</h3>
+    <p>
+    <li>Arrays need Contiguous memory, which some times is bad<br>
+1.Example – Consider there are only three memories of size 10, 10     and 400<br>
+2.We need to store an array of size 15<br>
+3.In this case, the array will use memory location is size 400 and    not combine memory A and B of size 10 and 10 respectively.<br>
+4.Thus wasting a lot of memory</li></p>
+    <h3>Inserting in Array is expensive</h3>
+    <li>Let us say you have an array a[] = {10, 20, 40, 60, 80} and we need to add 50 in a same sorted format.</li>
+    <li>Then, we have to move all elements after 40 to one additional position</li>
+    <li>Also, same goes for deletion if we want to delete 20. Then all elements after it have to be moved to one position in the opposite direction.</li>
+
+<h2>Advantages of Link-list</h2>
+<p>
+    <li>Ease of insertion and deletion. </li>
+    <li>Dynamic Size</li>
+    </p>
+
+<h2>Disadvantages of Link-list</h2>
+    <li>We have to search elements linearly, and can’t do random access</li>
+    <li>We can’t do efficient searches like binary search</li>
+    <li>Linked lists are not cache friendly as arrays are stored in contigious format they can be cached easily</li>
+    <li>Loss of data threat is there, if we lose one pointer location the rest of linked list can’t be accessed.</li>
+    <li>Extra space for pointers is needed</li>
+    <h2>TYPES OF LINK-LIST</h2><br>
+    <img src="types.png" border="2" height="300" width="600"><br><br>
+There are four key types of linked lists:
+
+<li>Singly linked lists</li>
+<li>Doubly linked lists</li>
+<li>Circular linked lists</li>
+<li>Circular doubly linked lists</li>
+    <h3>Singly Linked List</h3>
+    <img src="singly.png" border="2" height="300" width="600"><br><br>
+    A singly linked list is a unidirectional linked list. So, you can only traverse it in one direction, i.e., from head node to tail node.
+    
+    <h3>Doubly Linked List</h3>
+    <img src="link.png" border="2" height="300" width="600"><br><br>
+    A doubly linked list is a bi-directional linked list. So, you can traverse it in both directions. Unlike singly linked lists, its nodes contain one extra pointer called the previous pointer. This pointer points to the previous node.
+    <h3>Circular Linked List</h3>
+    <img src="circular.png" border="2" height="300" width="600"><br><br>
+    A circular Linked list is a unidirectional linked list. So, you can traverse it in only one direction. But this type of linked list has its last node pointing to the head node. So while traversing, you need to be careful and stop traversing when you revisit the head node.
+    <h3>Circular Doubly Linked List</h3>
+     circular doubly linked list is a mixture of a doubly linked list and a circular linked list. Like the doubly linked list, it has an extra pointer called the previous pointer, and similar to the circular linked list, its last node points at the head node. This type of linked list is the bi-directional list. So, you can traverse it in both directions.
+    <img src="doubly.png" border="2" height="300" width="600"><br><br>
+    <h2>Applications of Different Types of Linked Lists</h2>
+    <li>A linked list is used to implement stack and queues</li><br>
+    <li>A linked list is used to represent sparse matrices</li><br>
+    <li>You can implement an image viewer using a circular linked list</li><br>
+    <li>You can use the linked list concept to navigate through web pages</li><br>
+    <li>You can use a circular doubly linked list to implement a Fibonacci heap</li><br><br>
+<button><a href="array.html">➪PREVIOUS  </a></button>
+<button class="btn"><a href="stack.html"> NEXT➪ </a></button><br><br><br>
+<footer>
+ <p><center> @ book study point production</center></p>
+</footer>
+
+</body>
+<html>

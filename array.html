@@ -1,0 +1,225 @@
+<html>
+<head>
+    <title>array</title>
+    <style>
+h1{
+font-family: Algerian;
+color:deepskyblue; 
+}
+
+h2{
+    font-family:sans-serif;
+    color: deeppink;          
+}
+
+ body {
+background-color:yellow;
+color:black;
+font-family:Times New Roman ;
+font-size:20px;
+list-style:square;
+}
+button {
+background-color:darksalmon; 
+border: .8px solid red ;
+border-radius: 10px; 
+color: blue; 
+padding: 5px;
+box-shadow: 0 0 10px 0 crimson, 0 0 10px 0 crimson, 0 0 10px 0 crimson inset;
+height: 10vh;
+width : 30vh;
+float:left;
+border-radius: 30px;
+font-family: "Quicksand", sans-serif;
+    margin-bottom: 0px;
+ }
+.btn
+{
+background-color:darksalmon; 
+border:.8px solid red ;
+border-radius: 10px; 
+color: blue; 
+padding: 5px;
+box-shadow: 0 0 10px 0 crimson, 0 0 10px 0 crimson, 0 0 10px 0 crimson inset;
+height: 10vh;
+width : 30vh;
+float:right; 
+border-radius: 30px;
+font-family: "Quicksand", sans-serif;
+}
+footer
+{
+    background-color:green;
+    color:white;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+</style>
+</head>
+<body>
+<h1>ARRAYS IN DATA STRUCTURE :</h1>
+<body>
+<p>
+An array is a linear data structure.Arrays are defined as the collection of similar types of data items stored at contiguous memory locations. The idea is to store multiple items of the same type together in one place. It allows the processing of a large amount of data in a relatively short period. It is one of the simplest data structures where each data element can be randomly accessed by using its index number.The first element of the array is indexed by a subscript of 0. There are different operations possible in an array, like Searching, Sorting, Inserting, Traversing, Reversing, and Deleting.Following are the important terms to understand the concept of Array.</p>
+<li><b> Element </b>− Each item stored in an array is called an element.</li>
+
+    <li><b>Index</b> − Each location of an element in an array has a numerical index, which is used to identify the element.</li> 
+<h2>Characteristics of an Array:</h2>
+<p>An array has various characteristics which are as follows:
+<li>Arrays use an index-based data structure which helps to identify each of the elements in an array easily using the index.</li>
+<li>If a user wants to store multiple values of the same data type, then the array can be utilized efficiently.</li>
+<li>An array can also handle complex data structures by storing data in a two-dimensional array.</li>
+<li>An array is also used to implement other data structures like Stacks, Queues, Heaps, Hash tables, etc.</li>
+<li>The search process in an array can be done very easily.</li>
+</p>
+<h2>Applications of an Array:</h2>
+<p>Different applications of an array are as follows:
+<li>An array is used in solving matrix problems.</li>
+<li>Database records are also implemented by an array.</li>
+<li>It helps in implementing a sorting algorithm.</li>
+<li>It is also used to implement other data structures like Stacks, Queues, Heaps, Hash tables, etc. </li>
+<li> An array can be used for CPU scheduling.</li>
+<li>Can be applied as a lookup table in computers.</li>
+<li>Arrays can be used in speech processing where every speech signal is an array.</li></p>
+<h2>Real-Life Applications of Array: </h2>
+<p>
+<li>An array is frequently used to store data for mathematical computations.</li>
+<li>It is used in image processing.</li>
+<li>It is also used in record management.</li>
+<li>Book pages are also real-life examples of an array.</li>
+<li>It is used in ordering boxes as well.</li>
+    
+</p>
+
+<h2>Why Do You Need an Array in Data Structures?</h2>
+<p>Let’s consider the situation where we need to get 10 student’s age and store it for some calculation.
+Since age is an integer type, we can store it something like below,
+<center><table border="5" >
+<tr>
+<td>
+<h4>Example,</h4>
+
+<h5>int ag1, age2, age3, age4, age5, age6, age7, age8, age9, age10;</h5></td>
+</tr></table></center><br>
+if we declare like above, it will be very difficult for us to manipulate the data.
+
+If more number of student joins, then it is very difficult to declare a lot of variables and keep track of it.
+
+To overcome this kind of situation, we should use Array data structure.</p>
+<h2>Array Representation</h2>
+    <p>Arrays can be declared in various ways in different languages. For illustration, let's take C array declaration.<br><br>
+<img src = "array_declaration.jpg" border="2" height="200" width="500"><br><br>
+Arrays can be declared in various ways in different languages. For illustration, let's take C array declaration.<br><br>
+<img src = "array_representation.jpg" border="2" height="200" width="500"><br><br>
+As per the above illustration, following are the important points to be considered.
+<li>Index starts with 0.</li>
+<li>Array length is 10 which means it can store 10 elements.</li>
+<li>Each element can be accessed via its index. For example, we can fetch an element at index 6 as 9.</li>
+    
+Here is the syntax for arrays:<br>
+
+1D Arrays: int arr[n];<br>
+
+2D Arrays: int arr[m][n];<br>
+
+3D Arrays: int arr[m][n][o];
+<br>
+</p>
+
+
+<h2>Basic Operations</h2>
+<p>Following are the basic operations supported by an array.
+
+<li><b>Traverse</b> − print all the array elements one by one.</li>
+
+<li><b>Insertion</b> − Adds an element at the given index.</li>
+
+<li><b>Deletion</b> − Deletes an element at the given index.</li>
+
+<li><b>Search</b> − Searches an element using the given index or by the value.</li>
+
+<li><b>Update </b>− Updates an element at the given index.</li>
+
+<h2>TYPES OF ARRAY</h2>
+<p>There are majorly two types of arrays, they are:</p>
+<h5>One-Dimensional Arrays:</h5>
+<img src = "arays.png"  border="2" height="100" width="500"><br><br>
+A one-dimensional array is also called a single dimensional array where the elements will be accessed in sequential order. This type of array will be accessed by the subscript of either a column or row index.
+
+<h5>Two-Dimensional Arrays</h5>
+Two-dimensional arrays can be defined as arrays within an array. 2D arrays erected as metrics, which is a collection of rows and columns. 
+
+<img src = "arays2.png"  border="2" height="200" width="500"><br><br>
+
+<h2>Multi-Dimensional Arrays:</h2>
+<p>  When the number of dimensions specified is more than one, then it is called as a multi-dimensional array.
+<img src = "arrays3.png" border="2" height="200" width="500"><br><br>
+</p>
+<h2>How Do You Initialize an Array?</h2>
+<p>
+<li>Method 1:
+int a[6] = {2, 3, 5, 7, 11, 13};<li>
+
+<li>Method 2: <br>
+int arr[]= {2, 3, 5, 7, 11};<li>
+
+<li>Method 3:<br> 
+int n;
+
+scanf(“%d”,&n);
+
+int arr[n];
+
+for(int i=0;i<5;i++)
+
+{
+scanf(“%d”,&arr[i]);
+}</li>
+
+<li>Method 4:<br>
+int arr[5];
+
+arr[0]=1;
+
+arr[1]=2;
+
+arr[2]=3;
+
+arr[3]=4;
+
+arr[4]=5;</li></p>
+<h2>How Can You Access Elements of Arrays in Data Structures</h2>
+<p>
+<img src = "array4.png"  border="2" height="100" width="500"><br><br>
+    You can access elements with the help of the index at which you stored them. Let's discuss it with a code:
+
+#include<stdio.h><br>
+
+int main()<br>
+
+{<br>
+
+int a[5] = {2, 3, 5, 7, 11};<br>
+
+printf(“%d\n”,a[0]); // we are accessing<br>
+
+printf(“%d\n”,a[1]);<br>
+
+printf(“%d\n”,a[2]);<br>
+
+printf(“%d\n”,a[3]);<br>
+
+printf(“%d”,a[4]);<br>
+
+return 0;<br>
+
+}<br>
+<img src = "array5.png"  border="2" height="200" width="500"><br><br>
+<button><a href="types.html">➪PREVIOUS  </a></button>
+<button class="btn"><a href="stack.html"> NEXT➪ </a></button><br><br>
+<footer>
+ <p><center> @ book study point production</center></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<html>
+<head>
+<style>
+h1{
+    color: darkslateblue;
+        font-family: sans-serif;
+    }
+    h2{
+        color: deeppink;
+       
+    }
+    h3{
+        color:magenta;
+    }
+body {
+background-color:yellow;
+color:black;
+font-family:Times New Roman ;
+font-size:20px;
+list-style:disc;
+}
+    
+ button {
+background-color:darksalmon; 
+border: .8px solid red ;
+border-radius: 10px; 
+color: blue; 
+padding: 5px;
+box-shadow: 0 0 10px 0 crimson, 0 0 10px 0 crimson, 0 0 10px 0 crimson inset;
+height: 10vh;
+width : 30vh;
+float:left;
+border-radius: 30px;
+font-family: "Quicksand", sans-serif;
+ }
+.btn
+{
+background-color:darksalmon; 
+border:.8px solid red ;
+border-radius: 10px; 
+color: blue; 
+padding: 5px;
+box-shadow: 0 0 10px 0 crimson, 0 0 10px 0 crimson, 0 0 10px 0 crimson inset;
+height: 10vh;
+width+ : 30vh;
+float:right; 
+border-radius: 30px;
+font-family: "Quicksand", sans-serif;
+}
+  footer
+{
+    background-color:green;
+    color:white;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+}   
+
+    
+</style>
+</head>
+<boby>
+<h1> TREE IN DATA STRUCTURE</h1>
+<p>The tree is a nonlinear hierarchical data structure and comprises a collection of entities known as nodes. It connects each node in the tree data structure using "edges”, both directed and undirected.<br><br>
+<img src="tree.png"border="2" height="200"width="400"><br><br>
+The image below represents the tree data structure. The blue-colored circles depict the nodes of the tree and the black lines connecting each node with another are called edges.<br></p>
+<h2>The Necessity for a Tree in Data Structures</h2>
+<p>Other data structures like arrays, linked-list, stacks, and queues are linear data structures, and all these data structures store data in sequential order. Time complexity increases with increasing data size to perform operations like insertion and deletion on these linear data structures. But it is not acceptable for today's world of computation.<br>
+The non-linear structure of trees enhances the data storing, data accessing, and manipulation processes by employing advanced control methods traversal through it.
+</p>
+<h2>Terminologies of TREE</h2>
+ Some terminologies of data structure are:
+    <br>
+<h3>Tree Node</h3>
+A node is a structure that contains a key or value and pointers in its child node in the tree data structure.<br>
+<table border="2" cellpadding="5" cellspacing="5">
+<th>    
+    In the tree data structure, you can define the tree node as follows.</th>
+    <tr>
+    <td><center>
+    struct node<br>
+
+{<br>
+
+ int data;<br>
+
+ struct node *leftchild;<br>
+
+ struct node *rightchild;<br>
+
+}<br>
+</center>
+</td>
+</tr>
+ </table> 
+<h3>Root</h3>
+<li>In a tree data structure, the root is the first node of the tree. The root node is the initial node of the tree in data structures.</li><br>
+    <li>In the tree data structure, there must be only one root node</li><br>
+    <img src="root.png" border="2" height="200" width="400"><br><br>
+    <h3>Edge </h3>
+<li>In a tree in data structures, the connecting link of any two nodes is called the edge of the tree data structure.</li><br>
+    <li>In the tree data structure, N number of nodes connecting with N -1 number of edges.</li><br>
+    <img src="edges.png" border="2" height="200" width="400"><br><br>
+    <h3> Parent </h3>
+    In the tree in data structures, the node that is the predecessor of any node is known as a parent node, or a node with a branch from itself to any other successive node is called the parent node.<br><br>
+    <img src="parent.png" border="2" height="200" width="400"><br><br>
+<h3>Child</h3>
+<li>The node, a descendant of any node, is known as child nodes in data structures.</li><br>
+    <li>In a tree, any number of parent nodes can have any number of child nodes.</li><br>
+    <li>In a tree, every node except the root node is a child node.
+</li><br>
+    <img src="Child.png" border="2" height="200" width="400"><br><br>
+    <h3> Siblings</h3>
+    In trees in the data structure, nodes that belong to the same parent are called siblings<br><br>
+    <img src="sibling.png" border="2" height="200" width="400"><br><br>
+    <h3>Leaf </h3>
+<li>Trees in the data structure, the node with no child, is known as a leaf node.</li><br>
+    <li>In a tree, any number of parent nodes can have any number of child nodes.</li><br>
+    <li>In trees, leaf nodes are also called external nodes or terminal nodes.
+</li><br>
+    <img src="leaf.png"border="2" height="200" width="400"><br><br>
+    <h3>Internal nodes </h3>
+<li>Trees in the data structure have at least one child node known as internal nodes.</li><br>
+    <li>In trees, nodes other than leaf nodes are internal nodes.</li><br>
+    <li>Sometimes root nodes are also called internal nodes if the tree has more than one node.
+</li><br>
+    <img src="internal.png"border="2" height="200" width="400"><br><br>
+        
+    <h3>Height</h3>
+<li>In a tree data structure, the number of edges from the leaf node to the particular node in the longest path is known as the height of that node.</li><br>
+    <li>In the tree, the height of the root node is called "Height of Tree".</li><br>
+    <li>The tree height of all leaf nodes is 0.</li><br>
+    
+    <img src="height.png"border="2" height="200" width="400"><br><br>
+    <h3>Level</h3>
+    In tree data structures, the root node is said to be at level 0, and the root node's children are at level 1, and the children of that node at level 1 will be level 2, and so on
+    <img src="level.png" border="2" height="200" width="400"><br><br>
+<h3>SUBTREE</h3>
+    In the tree in data structures, each child from a node shapes a sub-tree recursively and every child in the tree will form a sub-tree on its parent node.
+    <img src="subtree.png" border="2" height="200" width="400"><br><br>
+    <h3>Depth</h3>
+<li>In a tree, many edges from the root node to the particular node are called the depth of the tree.</li><br>
+    <li>In the tree, the total number of edges from the root node to the leaf node in the longest path is known as "Depth of Tree".</li><br>
+    <li>In the tree data structures, the depth of the root node is 0.</li><br>
+    
+    <img src="depth.png"border="2" height="200" width="400"><br><br>
+    
+<h2>Types of Tree in Data Structures</h2>
+Here are the different kinds of tree in data structures:
+<h3>General Tree</h3>
+The general tree is the type of tree where there are no constraints on the hierarchical structure.<br>
+Properties<br>
+    <li>The general tree follows all properties of the tree data structure.</li>
+    <li>A node can have any number of nodes.</li>
+    <img src="general-tree.png" border="2" height="200" width="400"><br><br>
+    <h3>Binary Tree</h3>A binary tree has the following properties:
+    <br>
+Properties<br>
+<li>Follows all properties of the tree data structure.</li>
+    <li>Binary trees can have at most two child nodes.</li>
+    <li>These two children are called the left child and the right child.</li>
+    <img src="binary-tree.png" border="2" height="200" width="400"><br><br>
+    <h3>Binary SearchTree</h3>A binary search tree is a type of tree that is a more constricted extension of a binary tree data structure.
+    <br>
+Properties<br>
+<li>Follows all properties of the tree data structure.</li>
+    <li>The binary search tree has a unique property known as the binary search property. This states that the value of a left child node of the tree should be less than or equal to the parent node value of the tree. And the value of the right child node should be greater than or equal to the parent value.</li>
+    
+    <img src="binary-search-tree1.png" border="2" height="200" width="400"><br><br>
+    <h3>AVL Tree </h3>An AVL tree is a type of tree that is a self-balancing binary search tree.
+    <br>
+Properties<br>
+<li>Follows all properties of the tree data structure.</li>
+    <li>Self-balancing.</li><br>
+    <li>Each node stores a value called a balanced factor, which is the difference in the height of the left sub-tree and right sub-tree.</li><br>
+    <li>All the nodes in the AVL tree must have a balance factor of -1, 0, and 1.</li><br>
+    
+    <img src="AVL-TREE.png" border="2" height="200" width="400"><br><br>
+<button><a href="queue.html">➪PREVIOUS  </a></button>
+<button class="btn"><a href="graph.html"> NEXT➪ </a></button><br><br><br>
+<footer>
+ <p><center> @ book study point production</center></p>
+</footer>
+</boby>
+</html>
